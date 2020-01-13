@@ -1,0 +1,20 @@
+name: example_bloc_load_state
+description: Example use BLOC for load state.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: 3.0.0
+  flutter_bloc: 3.1.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
