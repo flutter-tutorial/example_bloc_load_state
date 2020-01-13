@@ -4,7 +4,7 @@
 
 ## Подключение зависимостей
 
-Подключение необходимых пакетов в <pubspec.yaml> для данного примера.
+Подключение необходимых пакетов в [pubspec.yaml](pubspec.yaml) для данного примера.
 
 ### bloc
 <https://pub.dev/packages/bloc>
@@ -20,11 +20,11 @@
 Создать BLOC - StartBloc в котором будет бизнес-логика главного экрана.
 Создать экран StartScreen поведение которого будет зависеть от StartBloc.
 
-1. нужно создать и заполнить шаблоны в директории <lib/bloc/start/>
-  - <lib/bloc/start/bloc.dart> - связующий файл между: bloc, state, event
-  - <lib/bloc/start/start_bloc.dart> - тут будет сам управляющий блок **StartBloc**
-  - <lib/bloc/start/start_state.dart> - тут будут состояния **StartState** для блока **StartBloc**
-  - <lib/bloc/start/start_event.dart> - тут будут события/действия **StartEvent** для блока **StartBloc**
+1. нужно создать и заполнить шаблоны в директории [lib/bloc/start/](lib/bloc/start/)
+  - [lib/bloc/start/bloc.dart](lib/bloc/start/bloc.dart) - связующий файл между: bloc, state, event
+  - [lib/bloc/start/start_bloc.dart](lib/bloc/start/start_bloc.dart) - тут будет сам управляющий блок **StartBloc**
+  - [lib/bloc/start/start_state.dart](lib/bloc/start/start_state.dart) - тут будут состояния **StartState** для блока **StartBloc**
+  - [lib/bloc/start/start_event.dart](lib/bloc/start/start_event.dart) - тут будут события/действия **StartEvent** для блока **StartBloc**
   
 2. блок **StartBloc** имеет несколько состояний
   - **LoadStartState** будет начальным и будет отображать состояние загрузки,для примера будет изменяться
@@ -33,7 +33,7 @@
   - **SetStartState** в это состояние можно будет перейти по нажатию на кнопку
   
 3. Создать виджет экрана **StartScreen**
-  - <lib/screen/start_screen.dart>
+  - [lib/screen/start_screen.dart](lib/screen/start_screen.dart)
   - определить виджет **BlocProvider** для создания блока **StartBloc**
   - определить виджет **BlocBuilder** для перестроения дерева виджетов, когда будет меняться состояние **StartBloc**
   - использовать **BlocProvider** для вызова событий **StartEvent** вне блока **StartBloc**
